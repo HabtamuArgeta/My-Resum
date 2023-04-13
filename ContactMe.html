@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+   <html>
+       <head>
+        <title>Contact Me</title>
+        <link rel="icon" href="photoForResum/favicon.jpg" type="image/x-icon">
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://kit.fontawesome.com/b1ff1b393b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="menunav.css">
+        <link rel="stylesheet" href="mediaQuery.css">
+
+        <style>
+
+          .main .mainMain a{
+            text-decoration: none;
+          }
+         
+        </style>
+
+
+       </head>
+       <body>
+        <section id="headerid" class="header">
+          <div id="menuBarId"  class="menubar" >
+            <div class="threeBars"> <i class="fa fa-bars"  onclick="opennav()" ></i> </div>
+             <div class="menuBarPointer">menu bar</div>
+          </div>
+          <div class="headerPhotoBr">
+            <a href="index.html"> <img src="photoForResum/habtamuTtle.jpg" alt="habtamu" class="headerphoto"></a>
+            <div id="headerPhotoNameid" class="headerPhotoName">Habtamu Argeta</div>
+          </div>
+        </section>
+      
+      
+
+      <div id="menubarContentid"  class="menubar-contents">
+        <i  class="fa fa-close"  id="closeNav" onclick="closenav()"></i>
+        <a class="first" href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a class="first" href="AboutMe.html"><i class="fas fa-male"></i> About Me</a>
+        <a class="first" href="MyPhoto.html"><i class="fas fa-image"></i> My Photo</a>
+        <a class="first" href="MyCV.html"><i class="fas fa-book-reader"></i> My CV</a>
+        <a class="first" href="Certifcation.html"><i class="fas fa-book-open"></i> Certificates</a>
+        <div  class="projectBar">
+          <button  class="projects " onclick="myFunction()"><i class="fas fa-code"></i> Projects</button>
+        <div id="projectcontianerid" class="project-contianer first">
+         <a class="first" href="ProjectOfEngineerArgeta.html">EnginerArgeta'sWork</a>
+         
+        </div>
+        </div>
+        <a class="first" href="ContactMe.html"><i class="fas fa-address-book"></i> Contact Me </a>
+      </div>
+  
+       <div id="mainid"  class="main">
+          <div class="home">Contact Me</div>
+          <div  class="bar">h</div>
+          <div class="mainMain">
+            <p > 
+              <div class="adressHeader">Email Address</div>
+               <a  href="mailto:argethabtamu8@gmail.com"><i class="fas fa-envelope"></i> 
+                  argetahabtamu8@gmail.com</a><br>
+                <a  href="mailto:habtamuargeta6@gmail.com"><i class="fas fa-envelope"></i> 
+                  habtamuargeta@gmail.com</a>
+            </p>
+            <p>
+              <div class="adressHeader"><i class="fa fa-telegram"></i> Telegram</div>
+                @habtish_1234<br>
+                @Nokosha_mani
+            </p>
+            <p>
+              <div class="adressHeader"><i class="fa fa-linkedin-square"></i> linkdin</div>
+                <a  target="_blank" href="https://www.linkedin.com/in/habtamu-argeta-671a93240/">www.linkedin.com/in/habtamu-argeta-671a93240/</a>
+                
+            </p>
+            <p>
+              <div class="adressHeader"><i class="fa fa-phone"></i> telephone number</div>
+                <a href="tel:+251901063544">+251901063544</a><br>
+                <a href="tel:+251919655423">+251919655423</a>
+            </p>
+            <p>
+              <div class="adressHeader"><i class="fa fa-github"></i> Github</div>
+               <a target="_blank" href="https://github.com/HabtamuArgeta">https://github.com/HabtamuArgeta</a>
+            </p>
+            <p>
+              <div class="adressHeader">Education Address</div>
+                Addis Ababa University<br>
+               College of Natural and Computattional science(CNCS)<br>
+              OR 4-Killo compus.
+            </p>
+          </div>
+        </div>
+        <script>
+         function opennav(){
+    let widowSize = window.matchMedia("(max-width: 720px)");
+    midiacontroler(widowSize) ;
+    widowSize.addListener(midiacontroler);
+    function midiacontroler(widowsize) {
+       if (widowsize.matches) {
+        document.getElementById("headerid").style.zIndex="-1";
+       document.getElementById("mainid").style.zIndex="-1";
+       document.getElementById("menubarContentid").style.width="79.9%";
+       document.getElementById("menubarContentid").style.zIndex="1";
+        } 
+        else{
+       document.getElementById("headerid").style.marginLeft = "20%";
+       document.getElementById("mainid").style.marginLeft = "20%";
+       document.getElementById("menubarContentid").style.width="19.9%";
+       document.getElementById("headerid").style.width="80%";
+       document.getElementById("mainid").style.width="80%";
+       document.getElementById("menuBarId").style.display="none";
+        }
+      }
+      
+       document.getElementById("headerPhotoNameid").style.transform="rotate(360deg)";
+       document.getElementById("headerPhotoNameid").style.transition="1s"
+
+       let firstElements = document.getElementsByClassName("first");
+       let i;
+       for(i=0;i<firstElements.length;i++)
+         {
+           let eachElement=firstElements[i];
+           eachElement.style.paddingLeft = "20%";
+         }
+      }
+          function closenav(){
+            document.getElementById("headerid").style.marginLeft = "0%";
+           document.getElementById("mainid").style.marginLeft = "3%";
+           document.getElementById("menubarContentid").style.width="0%";
+           document.getElementById("headerid").style.width="100%";
+           document.getElementById("mainid").style.width="97%"
+           document.getElementById("menuBarId").style.display="block";
+           document.getElementById("menuBarId").style.transition="1s";
+           document.getElementById("headerPhotoNameid").style.transform="rotate(-360deg)";
+           document.getElementById("headerPhotoNameid").style.transition="1s";
+           document.getElementById("first").style.marginLeft="0%";
+          }
+          function myFunction() {
+  document.getElementById("projectcontianerid").classList.toggle("showMe");
+         }
+         </script>
+       </body>
+   </html>

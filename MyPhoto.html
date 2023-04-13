@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+   <html>
+       <head>
+        <title>My Photo</title>
+        <link rel="icon" href="photoForResum/favicon.jpg" type="image/x-icon">
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://kit.fontawesome.com/b1ff1b393b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="menunav.css">
+        <link rel="stylesheet" href="mediaQuery.css">
+        <style>
+          .Photomain{
+           transition: width 0.7s;
+           transition: margin-left 0.7s;
+          }
+         
+          img {
+            vertical-align:middle;
+          }
+          .slide-contianer{
+            position: relative;
+            width: 100%; /* 100% of his parent */
+          }
+          
+          .numberText{
+            position: absolute;
+            top:0px;
+            padding:1%;
+            color:white;
+          }
+          .prev, .next{
+            position: absolute;
+            top:40%;
+            color: white;
+            font-size: 3vw;
+            padding: 1%;
+            user-select: none;
+            cursor: pointer;
+          }
+          .next{
+            right:0px;
+          }
+          .prev:hover,.next:hover{
+            background-color: black;
+          }
+          .row:after{
+            content:"";
+            clear: both;
+            display: block;
+          }
+          
+          .imageBox{
+            cursor: pointer;
+            opacity: 0.6;
+          }
+          .active,.imageBox:hover{
+            opacity:1;
+          }
+            
+        </style>
+
+       </head>
+       <body>
+        <section id="headerid" class="header">
+          <div id="menuBarId"  class="menubar" >
+             <div class="threeBars"> <i class="fa fa-bars"  onclick="opennav()" ></i> </div>
+             <div class="menuBarPointer">menu bar</div>
+          </div>
+          <div class="headerPhotoBr">
+            <a href="index.html"> <img src="photoForResum/habtamuTtle.jpg" alt="habtamu" class="headerphoto"></a>
+            <div id="headerPhotoNameid" class="headerPhotoName">Habtamu Argeta</div>
+          </div>
+        </section>
+      
+      
+
+      <div id="menubarContentid"  class="menubar-contents">
+        <i  class="fa fa-close"  id="closeNav" onclick="closenav()"></i>
+        <a class="first" href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a class="first" href="AboutMe.html"><i class="fas fa-male"></i> About Me</a>
+        <a class="first" href="MyPhoto.html"><i class="fas fa-image"></i> My Photo</a>
+        <a class="first" href="MyCV.html"><i class="fas fa-book-reader"></i> My CV</a>
+        <a class="first" href="Certifcation.html"><i class="fas fa-book-open"></i> Certificates</a>
+        <div  class="projectBar">
+          <button  class="projects " onclick="myFunction()"><i class="fas fa-code"></i> Projects</button>
+        <div id="projectcontianerid" class="project-contianer first">
+          <a class="first" href="ProjectOfEngineerArgeta.html">EnginerArgeta'sWork</a>
+         
+        </div>
+        </div>
+        <a class="first" href="ContactMe.html"><i class="fas fa-address-book"></i> Contact Me </a>
+      </div>
+  
+       <div id="mainid"  class="Photomain">
+          <div class="home">My Photos</div>
+          <div  class="bar">h</div>
+          <div class="PhotomainMain">
+           <div class="slide-contianer">
+
+               <div class="slide" >
+                   <div class="numberText">1/11</div>
+                   <img  src="photoForResum/habtamu2011asu.jpg" width="100%" height="100%"  alt="habtamu">
+               </div>
+               <div class="slide">
+                 <div class="numberText">2/11</div>
+                 <img   src="photoForResum/habtamu2014barudahome2.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">3/11</div>
+                <img   src="photoForResum/habtamu2015scienseMus.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">4/11</div>
+                <img   src="photoForResum/habtamu2014barudaObsi.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">5/11</div>
+                <img    src="photoForResum/habtamu2011flower.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">6/11</div>
+                <img   src="photoForResum/habtamu2014barudahouse.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">7/11</div>
+                <img   src="photoForResum/habtamu2015presencetv.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">8/11</div>
+                <img   src="photoForResum/habtamu2015sciencemu2.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">9/11</div>
+                <img   src="photoForResum/habtamu2011trip.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">10/11</div>
+                <img  src="photoForResum/habtamu2015presencetv2.jpg" width="100%" height="100%" alt="habtamu">
+              </div>
+              <div class="slide">
+                <div class="numberText">11/11</div>
+                <img   src="photoForResum/habtamu2014gulehi.jpg"  width="100%" height="100%" alt="habtamu">
+              </div>
+              <a class="prev" onclick="changeSlide(-1)">❮</a>
+              <a class="next" onclick="changeSlide(1)">❯</a>
+              
+              <div class="row">
+
+                   <div class="column">
+                    <img class="imageBox" onclick="showclickedImage(1)" src="photoForResum/habtamu2011asu.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                     <img class="imageBox" onclick="showclickedImage(2)"  src="photoForResum/habtamu2014barudahome2.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(3)"  src="photoForResum/habtamu2015scienseMus.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(4)"  src="photoForResum/habtamu2014barudaObsi.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(5)"   src="photoForResum/habtamu2011flower.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                     <img  class="imageBox" onclick="showclickedImage(6)"  src="photoForResum/habtamu2014barudahouse.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(7)"  src="photoForResum/habtamu2015presencetv.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(8)"  src="photoForResum/habtamu2015sciencemu2.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(9)"  src="photoForResum/habtamu2011trip.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(10)"  src="photoForResum/habtamu2015presencetv2.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+                   <div class="column">
+                    <img  class="imageBox" onclick="showclickedImage(11)"  src="photoForResum/habtamu2014gulehi.jpg" width="100%" height="100%" alt="habtamu">
+                   </div>
+
+              </div><!--end of row-->
+             
+           </div>  <!--end of slide-comtianer--> 
+          </div><!--end of mainMain-->
+        </div><!--end of main-->
+        <script>
+          function opennav(){
+    let widowSize = window.matchMedia("(max-width: 720px)");
+    midiacontroler(widowSize) ;
+    widowSize.addListener(midiacontroler);
+    function midiacontroler(widowsize) {
+       if (widowsize.matches) {
+        document.getElementById("headerid").style.zIndex="-1";
+       document.getElementById("mainid").style.zIndex="-1";
+       document.getElementById("menubarContentid").style.width="79.9%";
+       document.getElementById("menubarContentid").style.zIndex="1";
+        } 
+        else{
+       document.getElementById("headerid").style.marginLeft = "20%";
+       document.getElementById("mainid").style.marginLeft = "20%";
+       document.getElementById("menubarContentid").style.width="19.9%";
+       document.getElementById("headerid").style.width="80%";
+       document.getElementById("mainid").style.width="80%";
+       document.getElementById("menuBarId").style.display="none";
+        }
+      }
+       
+       document.getElementById("headerPhotoNameid").style.transform="rotate(360deg)";
+       document.getElementById("headerPhotoNameid").style.transition="1s"
+
+       let firstElements = document.getElementsByClassName("first");
+       let i;
+       for(i=0;i<firstElements.length;i++)
+         {
+           let eachElement=firstElements[i];
+           eachElement.style.paddingLeft = "20%";
+         }
+      }
+          function closenav(){
+            document.getElementById("headerid").style.marginLeft = "0%";
+           document.getElementById("mainid").style.marginLeft = "3%";
+           document.getElementById("menubarContentid").style.width="0%";
+           document.getElementById("headerid").style.width="100%";
+           document.getElementById("mainid").style.width="97%"
+           document.getElementById("menuBarId").style.display="block";
+           document.getElementById("menuBarId").style.transition="1s";
+           document.getElementById("headerPhotoNameid").style.transform="rotate(-360deg)";
+           document.getElementById("headerPhotoNameid").style.transition="1s";
+           document.getElementById("first").style.marginLeft="0%";
+          }
+         </script>
+         <script>
+            let numberOfSlide=1;
+            showSlide(numberOfSlide);
+
+            function changeSlide(n){
+              numberOfSlide +=n;
+              showSlide(numberOfSlide);
+            }
+
+            function showclickedImage(n){
+              numberOfSlide=n;
+               showSlide(numberOfSlide);
+            }
+
+
+            function showSlide(n){
+                 let slides=document.getElementsByClassName("slide");
+                 let box=document.getElementsByClassName("imageBox");
+                 if(n>slides.length)
+                 {
+                  numberOfSlide=1;
+                 }
+                 if(n<1)
+                 {
+                  numberOfSlide=slides.length;
+                 }
+                 let i;
+                 for(i=0;i<slides.length;i++){
+                  slides[i].style.display="none";
+                 }
+                 for(i=0;i<box.length;i++){
+                  box[i].className=box[i].className.replace("active","");
+                 }
+                 slides[numberOfSlide-1].style.display="block";
+                 box[numberOfSlide-1].className += " active";
+            }
+            function myFunction() {
+  document.getElementById("projectcontianerid").classList.toggle("showMe");
+         }
+         </script>
+       </body>
+   </html>

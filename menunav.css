@@ -1,0 +1,55 @@
+.menubar-contents{
+  position: fixed;
+  top:0px;
+  width:0px;
+  height: 100%;
+  left:0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.7s;
+  background-color: rgb(45, 41, 41);
+  padding-top: 5px;
+
+}
+
+.menubar-contents  a{
+  padding: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.menubar-contents a:hover{
+  background-color: black;
+}
+.projectBar{
+  display: block;
+  background-color: rgb(45, 41, 41);;
+  position: relative;
+  margin-left: 0%;
+ 
+}
+.projects{
+  color: white;
+  background-color: rgb(45, 41, 41);
+  border:1px solid rgb(45, 41, 41);
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20%;
+  padding-right: 22%;
+}
+ .project-contianer {
+  display: none;
+  position: relative;
+  margin-left: -8%;
+  
+}
+.showMe{
+  display: block;
+}
+.projects:hover{
+  background-color: black;
+}

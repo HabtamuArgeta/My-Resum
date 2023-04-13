@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+html {
+font-family: "Lucida Sans", sans-serif;
+user-select: none;
+}
+.header{
+width: 100%;
+transition-property: width ;
+transition-duration: 0.7s;
+transition: margin-left  0.7s;
+ background-color: rgba(210, 225, 185, 0.5);
+
+}
+
+.header .menubar .menuBarPointer{
+display: none;
+margin-left: 20%;
+color:black;
+}
+
+.header .menubar:hover .menuBarPointer{
+display: block;
+}
+.header .headerPhotoBr .headerPhotoName{
+display: block;
+margin-left: 15%;
+
+}
+
+
+.home{
+  padding-top:3%;
+  text-align: center;
+   font-style: italic;
+   font-size: 5vw;
+   text-shadow: 2px 3px 4px rgb(38, 234, 195),4px 5px 5px rgb(207, 238, 29);
+ }
+
+  .bar{
+   background-color: brown;
+   color:brown;
+   width:86%;
+   height: 5%;
+   margin-left:7%;
+   margin-right:7%;
+  
+ }
+ 
+.main .welcome{
+  padding-left: 10%;
+  padding-right: 10%;
+ }
+.main .note:hover{
+  text-shadow: 3px 4px 5px rgb(255, 116, 144);
+}
+
+ .header .headerPhotoBr .headerphoto{
+  cursor: pointer;
+width: 155px;
+height: 140px;
+border-radius: 50%;
+}
