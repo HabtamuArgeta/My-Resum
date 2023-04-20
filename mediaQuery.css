@@ -104,6 +104,7 @@
  transition: margin-left 0.7s;
   margin-left: 2%;
   margin-right: 0%;
+    height:80%;
    float: left;
    clear: left;
    overflow-y: auto;
@@ -167,6 +168,7 @@ height: 217px;
   transition: margin-left 0.7s;
   margin-left: 2%;
    margin-right: 0%;
+    height:80%;
    float: left;
    clear: left;
     overflow-y: auto;
