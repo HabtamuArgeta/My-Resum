@@ -1,3 +1,3 @@
 # My-Resum
-this is my personal website which 
+This is my personal website 
 which is deployed at https://habtamuargeta.github.io/My-Resum/
