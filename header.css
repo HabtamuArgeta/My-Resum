@@ -13,19 +13,9 @@ transition: margin-left  0.7s;
  background-color: rgba(210, 225, 185, 0.5);
 
 }
-
-.header .menubar .menuBarPointer{
-display: none;
-margin-left: 20%;
-color:black;
-}
-
-.header .menubar:hover .menuBarPointer{
-display: block;
-}
 .header .headerPhotoBr .headerPhotoName{
 display: block;
-margin-left: 15%;
+margin-left: 7%;
 
 }
 
@@ -58,7 +48,7 @@ margin-left: 15%;
 
  .header .headerPhotoBr .headerphoto{
   cursor: pointer;
-width: 155px;
-height: 140px;
+width: 220px;
+height: 200px;
 border-radius: 50%;
 }
